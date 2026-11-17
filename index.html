@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>50 Aniversario • Paula Cisneros & Evaristo Vázquez</title>
+  <meta name="description" content="Tenemos el honor de invitarlos a celebrar el 50 Aniversario de Bodas de Oro de Paula Cisneros y Evaristo Vázquez. Viernes 18 de diciembre de 2026 en El Bordonal, Lázaro Cárdenas, Michoacán." />
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Great+Vibes&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ivory: '#FAF8F5',
+            ivoryDark: '#F2EDE4',
+            oliveDark: '#2C351E',
+            oliveMid: '#4A5735',
+            oliveSage: '#7A8665',
+            goldDark: '#9A7424',
+            goldMetallic: '#B8860B',
+            goldLight: '#D4AF37',
+          },
+          fontFamily: {
+            script: ['"Great Vibes"', 'cursive'],
+            serif: ['"Cormorant Garamond"', 'serif'],
+            display: ['"Cinzel"', 'serif'],
+            sans: ['"Montserrat"', 'sans-serif'],
+          },
+        },
+      },
+    };
+  </script>
+
+  <style>
+    body {
+      background-color: #FAF8F5;
+      color: #2C351E;
+      background-image: radial-gradient(rgba(184, 134, 11, 0.06) 1px, transparent 0);
+      background-size: 28px 28px;
+    }
+
+    .gold-foil-text {
+      background: linear-gradient(135deg, #8A6518 0%, #C59B27 35%, #E0BE53 50%, #9E7620 75%, #7D5A12 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .gold-border-double {
+      border: 1px solid rgba(184, 134, 11, 0.45);
+      box-shadow: inset 0 0 0 5px #FAF8F5, inset 0 0 0 6px rgba(184, 134, 11, 0.3);
+    }
+
+    .photo-frame {
+      border: 1px solid rgba(184, 134, 11, 0.55);
+      padding: 6px;
+      background-color: #FFFFFF;
+      box-shadow: 0 12px 30px -10px rgba(44, 53, 30, 0.16);
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(22px);
+      transition: all 0.85s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .timeline-line::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      width: 1.5px;
+      background: linear-gradient(to bottom, transparent, #B8860B 10%, #B8860B 90%, transparent);
+      transform: translateX(-50%);
+    }
+
+    @media (max-width: 640px) {
+      .timeline-line::before {
+        left: 22px;
+      }
+    }
+  </style>
+</head>
+<body class="antialiased selection:bg-goldMetallic/20 selection:text-oliveDark">
+
+  <!-- Barra de navegación flotante -->
+  <nav class="fixed top-0 inset-x-0 z-50 bg-ivory/92 backdrop-blur-md border-b border-goldMetallic/20">
+    <div class="max-w-3xl mx-auto px-3 py-2.5 flex items-center justify-between gap-2">
+      <a href="#inicio" class="font-display text-xs sm:text-sm tracking-[0.16em] text-goldDark font-semibold shrink-0">P &amp; E • 50</a>
+      <div class="flex items-center justify-end gap-2.5 sm:gap-5 font-sans uppercase text-oliveDark/85 whitespace-nowrap" style="font-size: clamp(0.6rem, 2.1vw, 0.78rem); letter-spacing: 0.08em;">
+        <a href="#inicio" class="hover:text-goldDark transition-colors">Inicio</a>
+        <a href="#ubicacion" class="hover:text-goldDark transition-colors">Ubicación</a>
+        <a href="#itinerario" class="hover:text-goldDark transition-colors">Itinerario</a>
+        <a href="#vestimenta" class="hover:text-goldDark transition-colors">Vestimenta</a>
+        <a href="#confirmar" class="text-goldDark font-semibold hover:text-oliveDark transition-colors">Confirmar</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- BLOQUE 1: PORTADA (HERO) -->
+  <header id="inicio" class="relative min-h-screen flex flex-col items-center justify-center pt-20 pb-14 px-4 sm:px-6 overflow-hidden">
+    
+    <!-- Esquina decorativa superior izquierda -->
+    <svg class="absolute top-14 left-0 w-40 sm:w-56 h-40 sm:h-56 text-oliveSage/25 pointer-events-none" viewBox="0 0 200 200" fill="none">
+      <path d="M10 180 C30 110, 80 50, 170 15" stroke="#4A5735" stroke-width="1.5" stroke-linecap="round"/>
+      <ellipse cx="45" cy="130" rx="14" ry="6" transform="rotate(-55 45 130)" fill="#7A8665"/>
+      <ellipse cx="68" cy="145" rx="14" ry="6" transform="rotate(-15 68 145)" fill="#4A5735"/>
+      <ellipse cx="82" cy="92" rx="15" ry="6.5" transform="rotate(-60 82 92)" fill="#7A8665"/>
+      <ellipse cx="106" cy="108" rx="15" ry="6.5" transform="rotate(-10 106 108)" fill="#B8860B" fill-opacity="0.55"/>
+      <ellipse cx="122" cy="58" rx="14" ry="6" transform="rotate(-55 122 58)" fill="#4A5735"/>
+      <ellipse cx="145" cy="72" rx="14" ry="6" transform="rotate(-10 145 72)" fill="#7A8665"/>
+      <circle cx="95" cy="85" r="3" fill="#B8860B"/>
+      <circle cx="132" cy="48" r="2.5" fill="#B8860B"/>
+    </svg>
+
+    <!-- Esquina decorativa inferior derecha -->
+    <svg class="absolute bottom-2 right-0 w-40 sm:w-56 h-40 sm:h-56 text-oliveSage/25 pointer-events-none rotate-180" viewBox="0 0 200 200" fill="none">
+      <path d="M10 180 C30 110, 80 50, 170 15" stroke="#4A5735" stroke-width="1.5" stroke-linecap="round"/>
+      <ellipse cx="45" cy="130" rx="14" ry="6" transform="rotate(-55 45 130)" fill="#7A8665"/>
+      <ellipse cx="68" cy="145" rx="14" ry="6" transform="rotate(-15 68 145)" fill="#4A5735"/>
+      <ellipse cx="82" cy="92" rx="15" ry="6.5" transform="rotate(-60 82 92)" fill="#7A8665"/>
+      <ellipse cx="106" cy="108" rx="15" ry="6.5" transform="rotate(-10 106 108)" fill="#B8860B" fill-opacity="0.55"/>
+      <ellipse cx="122" cy="58" rx="14" ry="6" transform="rotate(-55 122 58)" fill="#4A5735"/>
+      <ellipse cx="145" cy="72" rx="14" ry="6" transform="rotate(-10 145 72)" fill="#7A8665"/>
+      <circle cx="95" cy="85" r="3" fill="#B8860B"/>
+    </svg>
+
+    <div class="max-w-2xl w-full gold-border-double bg-ivory/95 px-6 sm:px-14 py-12 sm:py-16 text-center relative z-10 shadow-sm">
+      
+      <!-- Emblema superior 50 -->
+      <div class="flex flex-col items-center justify-center mb-5">
+        <div class="w-16 h-16 rounded-full border border-goldMetallic/50 flex items-center justify-center mb-3 bg-ivoryDark/60">
+          <span class="font-display text-2xl font-semibold gold-foil-text">50</span>
+        </div>
+        <p class="font-display text-xs sm:text-sm tracking-[0.28em] uppercase text-goldDark font-semibold">
+          50 Aniversario • Bodas de Oro
+        </p>
+      </div>
+
+      <!-- Línea divisoria dorada -->
+      <div class="flex items-center justify-center gap-3 my-5">
+        <span class="h-px w-12 sm:w-20 bg-gradient-to-r from-transparent to-goldMetallic"></span>
+        <svg class="w-4 h-4 text-goldMetallic" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 2L14.5 9.5L22 12L14.5 14.5L12 22L9.5 14.5L2 12L9.5 9.5L12 2Z"/>
+        </svg>
+        <span class="h-px w-12 sm:w-20 bg-gradient-to-l from-transparent to-goldMetallic"></span>
+      </div>
+
+      <!-- Nombres principales en Dorado (Paula primero) -->
+      <h1 class="font-script text-5xl sm:text-7xl leading-tight gold-foil-text py-2 px-1">
+        Paula Cisneros
+      </h1>
+      <p class="font-serif italic text-2xl sm:text-3xl text-goldDark my-0.5">&amp;</p>
+      <h1 class="font-script text-5xl sm:text-7xl leading-tight gold-foil-text py-2 px-1">
+        Evaristo Vázquez
+      </h1>
+
+      <!-- Frase conmemorativa -->
+      <p class="font-serif italic text-lg sm:text-xl text-oliveDark/90 max-w-md mx-auto mt-6 leading-relaxed">
+        “Cincuenta años de amor, familia y vida compartida. Con la bendición de Dios y la alegría de nuestros corazones, tenemos el honor de invitarlos a celebrar nuestro aniversario.”
+      </p>
+
+      <!-- Fotografía principal de Paula y Evaristo -->
+      <div class="max-w-sm mx-auto mt-7 mb-2">
+        <div class="photo-frame rounded-sm">
+          <img 
+            src="foto-portada.jpg" 
+            alt="Paula Cisneros y Evaristo Vázquez" 
+            class="w-full h-64 sm:h-72 object-cover object-top"
+          />
+        </div>
+      </div>
+
+      <!-- Fecha destacada -->
+      <div class="mt-8 pt-6 border-t border-goldMetallic/30">
+        <p class="font-display text-xs tracking-[0.25em] uppercase text-oliveMid mb-1">La cita es el</p>
+        <p class="font-display text-xl sm:text-2xl tracking-[0.14em] text-goldDark font-semibold">
+          VIERNES 18 DE DICIEMBRE DE 2026
+        </p>
+        <p class="font-serif text-base sm:text-lg text-oliveDark mt-1">
+          El Bordonal, Lázaro Cárdenas, Michoacán
+        </p>
+      </div>
+
+      <!-- Contador Regresivo -->
+      <div class="mt-8">
+        <p class="font-sans text-[11px] uppercase tracking-[0.2em] text-oliveMid mb-3">Faltan</p>
+        <div class="grid grid-cols-4 gap-2 sm:gap-4 max-w-sm mx-auto">
+          <div class="bg-ivoryDark/80 border border-goldMetallic/30 py-2.5 px-1">
+            <span id="days" class="block font-display text-xl sm:text-2xl font-semibold text-goldDark">--</span>
+            <span class="font-sans text-[10px] uppercase tracking-wider text-oliveDark/75">Días</span>
+          </div>
+          <div class="bg-ivoryDark/80 border border-goldMetallic/30 py-2.5 px-1">
+            <span id="hours" class="block font-display text-xl sm:text-2xl font-semibold text-goldDark">--</span>
+            <span class="font-sans text-[10px] uppercase tracking-wider text-oliveDark/75">Horas</span>
+          </div>
+          <div class="bg-ivoryDark/80 border border-goldMetallic/30 py-2.5 px-1">
+            <span id="minutes" class="block font-display text-xl sm:text-2xl font-semibold text-goldDark">--</span>
+            <span class="font-sans text-[10px] uppercase tracking-wider text-oliveDark/75">Min</span>
+          </div>
+          <div class="bg-ivoryDark/80 border border-goldMetallic/30 py-2.5 px-1">
+            <span id="seconds" class="block font-display text-xl sm:text-2xl font-semibold text-goldDark">--</span>
+            <span class="font-sans text-[10px] uppercase tracking-wider text-oliveDark/75">Seg</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- BLOQUE 2: UBICACIONES -->
+  <section id="ubicacion" class="py-16 px-4 sm:px-6 max-w-4xl mx-auto reveal">
+    <div class="text-center mb-12">
+      <p class="font-display text-xs tracking-[0.25em] uppercase text-oliveMid mb-2">Ceremonia y Celebración</p>
+      <h2 class="font-display text-2xl sm:text-3xl tracking-[0.12em] gold-foil-text font-semibold">
+        DÓNDE Y CUÁNDO
+      </h2>
+      <div class="w-16 h-px bg-goldMetallic mx-auto mt-4"></div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
+      
+      <!-- Tarjeta Misa -->
+      <div class="bg-white/80 border border-goldMetallic/40 p-8 text-center shadow-sm flex flex-col justify-between">
+        <div>
+          <div class="w-12 h-12 rounded-full bg-oliveDark/5 border border-goldMetallic/40 flex items-center justify-center mx-auto mb-5 text-goldDark">
+            <i data-lucide="church" class="w-6 h-6"></i>
+          </div>
+          <h3 class="font-display text-lg tracking-[0.15em] uppercase text-goldDark font-semibold mb-2">
+            Ceremonia Religiosa
+          </h3>
+          <p class="font-serif text-2xl font-semibold text-oliveDark mb-1">
+            Iglesia San José Obrero
+          </p>
+          <p class="font-sans text-xs uppercase tracking-widest text-oliveMid mb-4">
+            El Bordonal, Lázaro Cárdenas, Mich.
+          </p>
+          <div class="inline-block bg-ivoryDark px-4 py-1.5 border border-goldMetallic/30 mb-6">
+            <span class="font-display text-sm font-semibold text-oliveDark tracking-wider">3:00 PM</span>
+          </div>
+        </div>
+        
+        <a href="https://maps.app.goo.gl/3tWhDY3MhisDHf7e8?g_st=ic" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           class="inline-flex items-center justify-center gap-2 w-full py-3 px-5 bg-oliveDark text-ivory font-sans text-xs uppercase tracking-[0.16em] hover:bg-oliveMid transition-colors border border-goldMetallic/40">
+          <i data-lucide="map-pin" class="w-4 h-4 text-goldLight"></i>
+          Ver en Google Maps
+        </a>
+      </div>
+
+      <!-- Tarjeta Recepción -->
+      <div class="bg-white/80 border border-goldMetallic/40 p-8 text-center shadow-sm flex flex-col justify-between">
+        <div>
+          <div class="w-12 h-12 rounded-full bg-oliveDark/5 border border-goldMetallic/40 flex items-center justify-center mx-auto mb-5 text-goldDark">
+            <i data-lucide="wine" class="w-6 h-6"></i>
+          </div>
+          <h3 class="font-display text-lg tracking-[0.15em] uppercase text-goldDark font-semibold mb-2">
+            Recepción
+          </h3>
+          <p class="font-serif text-2xl font-semibold text-oliveDark mb-1">
+            Casa Vázquez Cisneros
+          </p>
+          <p class="font-sans text-xs uppercase tracking-widest text-oliveMid mb-4">
+            El Bordonal, Lázaro Cárdenas, Mich.
+          </p>
+          <div class="inline-block bg-ivoryDark px-4 py-1.5 border border-goldMetallic/30 mb-6">
+            <span class="font-display text-sm font-semibold text-oliveDark tracking-wider">4:30 PM</span>
+          </div>
+        </div>
+
+        <a href="https://maps.app.goo.gl/JPADyeauAnayinvMA?g_st=ic" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           class="inline-flex items-center justify-center gap-2 w-full py-3 px-5 bg-oliveDark text-ivory font-sans text-xs uppercase tracking-[0.16em] hover:bg-oliveMid transition-colors border border-goldMetallic/40">
+          <i data-lucide="map-pin" class="w-4 h-4 text-goldLight"></i>
+          Ver en Google Maps
+        </a>
+      </div>
+
+    </div>
+
+    <!-- Fotografía familiar integrada orgánicamente -->
+    <div class="max-w-md mx-auto mt-12">
+      <div class="photo-frame rounded-sm">
+        <img 
+          src="foto-familia.jpg" 
+          alt="Familia Vázquez Cisneros" 
+          class="w-full h-64 sm:h-72 object-cover object-center"
+        />
+      </div>
+    </div>
+  </section>
+
+  <!-- BLOQUE 3: ITINERARIO -->
+  <section id="itinerario" class="py-16 px-4 sm:px-6 bg-ivoryDark/60 border-y border-goldMetallic/20 reveal">
+    <div class="max-w-3xl mx-auto">
+      <div class="text-center mb-14">
+        <p class="font-display text-xs tracking-[0.25em] uppercase text-oliveMid mb-2">Programa del Evento</p>
+        <h2 class="font-display text-2xl sm:text-3xl tracking-[0.12em] gold-foil-text font-semibold">
+          ITINERARIO
+        </h2>
+        <div class="w-16 h-px bg-goldMetallic mx-auto mt-4"></div>
+      </div>
+
+      <div class="relative timeline-line space-y-10 sm:space-y-12">
+        
+        <!-- 3:00 PM -->
+        <div class="relative flex items-center justify-between sm:justify-normal sm:odd:flex-row-reverse group">
+          <div class="flex items-center justify-center w-11 h-11 rounded-full border-2 border-goldMetallic bg-ivory text-goldDark shadow-sm shrink-0 sm:order-1 sm:group-odd:-translate-x-1/2 sm:group-even:translate-x-1/2 z-10">
+            <i data-lucide="church" class="w-5 h-5"></i>
+          </div>
+          <div class="w-[calc(100%-3.75rem)] sm:w-[calc(50%-2.5rem)] bg-white/90 border border-goldMetallic/35 p-5 shadow-sm sm:group-odd:text-right">
+            <span class="font-display text-sm font-bold text-goldDark tracking-wider">3:00 PM</span>
+            <h4 class="font-serif text-xl font-semibold text-oliveDark mt-0.5">Misa de Acción de Gracias</h4>
+            <p class="font-sans text-xs text-oliveMid mt-1">Iglesia San José Obrero</p>
+          </div>
+        </div>
+
+        <!-- 4:30 PM -->
+        <div class="relative flex items-center justify-between sm:justify-normal sm:odd:flex-row-reverse group">
+          <div class="flex items-center justify-center w-11 h-11 rounded-full border-2 border-goldMetallic bg-ivory text-goldDark shadow-sm shrink-0 sm:order-1 sm:group-odd:-translate-x-1/2 sm:group-even:translate-x-1/2 z-10">
+            <i data-lucide="sparkles" class="w-5 h-5"></i>
+          </div>
+          <div class="w-[calc(100%-3.75rem)] sm:w-[calc(50%-2.5rem)] bg-white/90 border border-goldMetallic/35 p-5 shadow-sm sm:group-odd:text-right">
+            <span class="font-display text-sm font-bold text-goldDark tracking-wider">4:30 PM</span>
+            <h4 class="font-serif text-xl font-semibold text-oliveDark mt-0.5">Recepción de Invitados</h4>
+            <p class="font-sans text-xs text-oliveMid mt-1">Casa Vázquez Cisneros</p>
+          </div>
+        </div>
+
+        <!-- 5:00 PM -->
+        <div class="relative flex items-center justify-between sm:justify-normal sm:odd:flex-row-reverse group">
+          <div class="flex items-center justify-center w-11 h-11 rounded-full border-2 border-goldMetallic bg-ivory text-goldDark shadow-sm shrink-0 sm:order-1 sm:group-odd:-translate-x-1/2 sm:group-even:translate-x-1/2 z-10">
+            <i data-lucide="utensils" class="w-5 h-5"></i>
+          </div>
+          <div class="w-[calc(100%-3.75rem)] sm:w-[calc(50%-2.5rem)] bg-white/90 border border-goldMetallic/35 p-5 shadow-sm sm:group-odd:text-right">
+            <span class="font-display text-sm font-bold text-goldDark tracking-wider">5:00 PM</span>
+            <h4 class="font-serif text-xl font-semibold text-oliveDark mt-0.5">Banquete / Comida</h4>
+            <p class="font-sans text-xs text-oliveMid mt-1">Servicio de comida para todos nuestros invitados</p>
+          </div>
+        </div>
+
+        <!-- 5:30 PM -->
+        <div class="relative flex items-center justify-between sm:justify-normal sm:odd:flex-row-reverse group">
+          <div class="flex items-center justify-center w-11 h-11 rounded-full border-2 border-goldMetallic bg-ivory text-goldDark shadow-sm shrink-0 sm:order-1 sm:group-odd:-translate-x-1/2 sm:group-even:translate-x-1/2 z-10">
+            <i data-lucide="music" class="w-5 h-5"></i>
+          </div>
+          <div class="w-[calc(100%-3.75rem)] sm:w-[calc(50%-2.5rem)] bg-white/90 border border-goldMetallic/35 p-5 shadow-sm sm:group-odd:text-right">
+            <span class="font-display text-sm font-bold text-goldDark tracking-wider">5:30 PM</span>
+            <h4 class="font-serif text-xl font-semibold text-oliveDark mt-0.5">Mariachi en Vivo, Vals y Baile</h4>
+            <p class="font-sans text-xs text-oliveMid mt-1">Brindis, vals conmemorativo y música en vivo</p>
+          </div>
+        </div>
+
+        <!-- 10:00 PM -->
+        <div class="relative flex items-center justify-between sm:justify-normal sm:odd:flex-row-reverse group">
+          <div class="flex items-center justify-center w-11 h-11 rounded-full border-2 border-goldMetallic bg-ivory text-goldDark shadow-sm shrink-0 sm:order-1 sm:group-odd:-translate-x-1/2 sm:group-even:translate-x-1/2 z-10">
+            <i data-lucide="moon-star" class="w-5 h-5"></i>
+          </div>
+          <div class="w-[calc(100%-3.75rem)] sm:w-[calc(50%-2.5rem)] bg-white/90 border border-goldMetallic/35 p-5 shadow-sm sm:group-odd:text-right">
+            <span class="font-display text-sm font-bold text-goldDark tracking-wider">10:00 PM</span>
+            <h4 class="font-serif text-xl font-semibold text-oliveDark mt-0.5">Cena</h4>
+            <p class="font-sans text-xs text-oliveMid mt-1">Para continuar celebrando juntos</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- BLOQUE 4: CÓDIGO DE VESTIMENTA -->
+  <section id="vestimenta" class="py-16 px-4 sm:px-6 max-w-2xl mx-auto text-center reveal">
+    <div class="gold-border-double bg-white/85 p-8 sm:p-12">
+      <p class="font-display text-xs tracking-[0.25em] uppercase text-oliveMid mb-2">Etiqueta</p>
+      <h2 class="font-display text-2xl sm:text-3xl tracking-[0.12em] gold-foil-text font-semibold mb-6">
+        CÓDIGO DE VESTIMENTA
+      </h2>
+      
+      <div class="flex items-center justify-center gap-6 my-6 text-oliveDark">
+        <div class="flex flex-col items-center">
+          <div class="w-14 h-14 rounded-full bg-ivoryDark border border-goldMetallic/40 flex items-center justify-center text-goldDark mb-2">
+            <i data-lucide="shirt" class="w-6 h-6"></i>
+          </div>
+          <span class="font-sans text-[11px] uppercase tracking-widest text-oliveMid">Caballeros</span>
+        </div>
+        <div class="h-10 w-px bg-goldMetallic/30"></div>
+        <div class="flex flex-col items-center">
+          <div class="w-14 h-14 rounded-full bg-ivoryDark border border-goldMetallic/40 flex items-center justify-center text-goldDark mb-2">
+            <i data-lucide="gem" class="w-6 h-6"></i>
+          </div>
+          <span class="font-sans text-[11px] uppercase tracking-widest text-oliveMid">Damas</span>
+        </div>
+      </div>
+
+      <p class="font-display text-xl tracking-[0.2em] uppercase text-oliveDark font-semibold mt-4">
+        FORMAL
+      </p>
+      <p class="font-serif italic text-lg text-oliveDark/85 mt-3 max-w-md mx-auto">
+        Agradecemos vestir de etiqueta formal para acompañarnos en esta ocasión tan especial.
+      </p>
+    </div>
+  </section>
+
+  <!-- BLOQUE 5: CONFIRMACIÓN DE ASISTENCIA (RSVP) -->
+  <section id="confirmar" class="py-16 px-4 sm:px-6 bg-oliveDark text-ivory reveal">
+    <div class="max-w-2xl mx-auto text-center">
+      
+      <!-- Fotografía familiar en arco floral integrada en el cierre -->
+      <div class="max-w-xs sm:max-w-sm mx-auto mb-9">
+        <div class="p-1.5 bg-ivory/95 border border-goldLight/60 shadow-lg rounded-sm">
+          <img 
+            src="foto-arco.jpg" 
+            alt="Celebrando 50 años en familia" 
+            class="w-full h-64 sm:h-72 object-cover object-center"
+          />
+        </div>
+      </div>
+
+      <p class="font-display text-xs tracking-[0.28em] uppercase text-goldLight mb-2">
+        Su presencia es nuestro mejor regalo
+      </p>
+      <h2 class="font-display text-2xl sm:text-3xl tracking-[0.12em] text-ivory font-semibold">
+        CONFIRMACIÓN DE ASISTENCIA
+      </h2>
+      <div class="w-16 h-px bg-goldLight mx-auto my-5"></div>
+      
+      <p class="font-serif text-lg sm:text-xl text-ivory/90 max-w-lg mx-auto leading-relaxed">
+        Por favor confírmanos tu asistencia antes del <strong class="text-goldLight font-semibold">27 de noviembre de 2026</strong> para reservar tu lugar.
+      </p>
+
+      <!-- Formulario rápido para personalizar mensaje de WhatsApp -->
+      <div class="mt-8 bg-ivory/10 border border-goldLight/30 p-6 sm:p-8 text-left max-w-lg mx-auto backdrop-blur-sm">
+        <div class="space-y-4">
+          <div>
+            <label for="guestName" class="block font-sans text-xs uppercase tracking-wider text-goldLight mb-1.5">
+              Nombre de la familia o invitado(s)
+            </label>
+            <input 
+              type="text" 
+              id="guestName" 
+              placeholder="Ej. Familia Pérez García" 
+              class="w-full px-4 py-2.5 bg-ivory text-oliveDark font-sans text-sm focus:outline-none focus:ring-2 focus:ring-goldLight"
+            />
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label for="guestCount" class="block font-sans text-xs uppercase tracking-wider text-goldLight mb-1.5">
+                Número de asistentes
+              </label>
+              <input 
+                type="number" 
+                id="guestCount" 
+                min="1" 
+                max="15" 
+                value="2"
+                class="w-full px-4 py-2.5 bg-ivory text-oliveDark font-sans text-sm focus:outline-none focus:ring-2 focus:ring-goldLight"
+              />
+            </div>
+
+            <div>
+              <label for="guestStatus" class="block font-sans text-xs uppercase tracking-wider text-goldLight mb-1.5">
+                Asistencia
+              </label>
+              <select 
+                id="guestStatus" 
+                class="w-full px-4 py-2.5 bg-ivory text-oliveDark font-sans text-sm focus:outline-none focus:ring-2 focus:ring-goldLight"
+              >
+                <option value="asistiremos">Sí, asistiremos con gusto</option>
+                <option value="no_asistiremos">Lamentablemente no podremos asistir</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <p class="font-sans text-[11px] uppercase tracking-widest text-ivory/75 text-center mt-6 mb-3">
+          Enviar confirmación vía WhatsApp a:
+        </p>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <button 
+            type="button"
+            onclick="sendWhatsApp('524435317547', 'Edgar')"
+            class="flex items-center justify-center gap-2 py-3.5 px-4 bg-goldMetallic hover:bg-goldDark text-white font-sans text-xs uppercase tracking-[0.14em] font-medium transition-colors cursor-pointer">
+            <i data-lucide="message-circle" class="w-4 h-4"></i>
+            <div class="text-left">
+              <span class="block leading-tight">Edgar Vázquez</span>
+              <span class="block text-[10px] opacity-90 tracking-normal">443 531 7547</span>
+            </div>
+          </button>
+
+          <button 
+            type="button"
+            onclick="sendWhatsApp('524436863878', 'Daniel')"
+            class="flex items-center justify-center gap-2 py-3.5 px-4 bg-goldMetallic hover:bg-goldDark text-white font-sans text-xs uppercase tracking-[0.14em] font-medium transition-colors cursor-pointer">
+            <i data-lucide="message-circle" class="w-4 h-4"></i>
+            <div class="text-left">
+              <span class="block leading-tight">Daniel Vázquez</span>
+              <span class="block text-[10px] opacity-90 tracking-normal">443 686 3878</span>
+            </div>
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PIE DE PÁGINA -->
+  <footer class="py-10 px-4 text-center bg-ivory border-t border-goldMetallic/25">
+    <p class="font-script text-4xl gold-foil-text mb-2">Paula &amp; Evaristo</p>
+    <p class="font-display text-xs tracking-[0.25em] uppercase text-oliveMid">
+      1976 — 2026 • Bodas de Oro
+    </p>
+    <p class="font-sans text-[11px] text-oliveDark/60 mt-3">
+      El Bordonal, Lázaro Cárdenas, Michoacán
+    </p>
+  </footer>
+
+  <!-- Scripts de funcionalidad -->
+  <script>
+    lucide.createIcons();
+
+    const targetDate = new Date('2026-12-18T15:00:00-06:00').getTime();
+
+    function updateCountdown() {
+      const now = new Date().getTime();
+      const distance = targetDate - now;
+
+      if (distance < 0) {
+        document.getElementById('days').innerText = '00';
+        document.getElementById('hours').innerText = '00';
+        document.getElementById('minutes').innerText = '00';
+        document.getElementById('seconds').innerText = '00';
+        return;
+      }
+
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      document.getElementById('days').innerText = String(days).padStart(2, '0');
+      document.getElementById('hours').innerText = String(hours).padStart(2, '0');
+      document.getElementById('minutes').innerText = String(minutes).padStart(2, '0');
+      document.getElementById('seconds').innerText = String(seconds).padStart(2, '0');
+    }
+
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+
+    function sendWhatsApp(phone, contactName) {
+      const nameInput = document.getElementById('guestName').value.trim();
+      const countInput = document.getElementById('guestCount').value || '1';
+      const statusInput = document.getElementById('guestStatus').value;
+
+      const guestLabel = nameInput ? nameInput : 'Invitado(s)';
+      let message = '';
+
+      if (statusInput === 'asistiremos') {
+        message = `Hola ${contactName}, somos *${guestLabel}* (${countInput} ${countInput === '1' ? 'persona' : 'personas'}). Confirmamos con mucho gusto nuestra asistencia a las Bodas de Oro de *Paula Cisneros y Evaristo Vázquez* el viernes 18 de diciembre de 2026 en El Bordonal.`;
+      } else {
+        message = `Hola ${contactName}, somos *${guestLabel}*. Agradecemos mucho la invitación a las Bodas de Oro de *Paula Cisneros y Evaristo Vázquez*, lamentablemente en esta ocasión no podremos acompañarles. ¡Muchas felicidades!`;
+      }
+
+      const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+      window.open(url, '_blank', 'noopener,noreferrer');
+    }
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
+  </script>
+</body>
+</html>
